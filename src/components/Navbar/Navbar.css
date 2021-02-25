@@ -1,0 +1,28 @@
+.navvy {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar-top {
+  background: linear-gradient(to bottom, #a5a5a5, rgb(0, 0, 0));
+  box-shadow: 0 0 0.8rem 0 rgba(0, 0, 0, 0.9);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  width: 100%;
+  height: 80px;
+}
+
+.nav-bar-bottom {
+  background-color: black;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.nav-links {
+  color: black;
+  font-size: 1rem;
+}
+
+/* .logo {
+  width: 5rem;
+} */
