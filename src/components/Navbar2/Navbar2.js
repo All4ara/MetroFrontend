@@ -9,7 +9,7 @@ const Nav = styled.nav`
     height: 60px;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 1rem 0rem;
     z-index: 100;
     position fixed;
     width: 100%;
@@ -23,6 +23,9 @@ const NavLink = css`
     height: 100%;
     cursor: pointer;
     text-decoration: none;
+    font-family: 'Amiri', serif;
+    font-weight: bold;
+    font-size: 1.2rem;
 `
 
 const Logo = styled(Link)`
@@ -42,7 +45,7 @@ const MenuBars = styled.i`
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(-100%, 25%)
+        transform: translate(-60%, 25%)
     }
 `
 const NavMenu = styled.div`
@@ -93,14 +96,14 @@ const Navbar2 = ({ toggle }) => {
 
   let style = {
     backgroundColor:
-      navbar || location.pathname !== '/' ? '#000' : 'transparent',
+      navbar || location.pathname !== '/home' ? '#000' : 'transparent',
     transition: '0.4s'
   };
 
 
     return (
         <Nav style={style}>
-            <Logo to='/'><img src={MetroLogo} alt="Mobile logo"></img></Logo>
+            <Logo to='/home'><img src={MetroLogo} alt="Mobile logo"></img></Logo>
             <MenuBars onClick={toggle}/>
             <NavMenu>
                 {menuData.map((item, index) => (

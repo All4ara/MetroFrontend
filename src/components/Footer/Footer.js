@@ -7,23 +7,23 @@ const Footer = () => {
     <footer className=" text-left text-white text-lg-start" style={{backgroundColor: 'rgba(0, 0, 0, 0.9)'}}>
         <section className="p-4 text-center">
         
-                <a className="m-3 btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a className="p-1 m-3 btn btn-outline-light btn-floating m-1" href="#!" role="button"
                     ><i className="fa fa-facebook-official" aria-hidden="true" style={{fontSize: '2rem'}}></i></a>
 
                 
-                <a className="m-3 btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a className="p-1 m-3 btn btn-outline-light btn-floating m-1" href="#!" role="button"
                     ><i className="fa fa-twitter-square" aria-hidden="true" style={{fontSize: '2rem'}}></i></a>
 
                 
-                <a className="m-3 btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a className="p-1 m-3 btn btn-outline-light btn-floating m-1" href="#!" role="button"
                     ><i className="fa fa-google-plus-square" aria-hidden="true" style={{fontSize: '2rem'}}></i></a>
 
                 
-                <a className="m-3 btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a className="p-1 m-3 btn btn-outline-light btn-floating m-1" href="#!" role="button"
                     ><i className="fa fa-instagram" aria-hidden="true" style={{fontSize: '2rem'}}></i></a>
 
                 
-                <a className="m-3 btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a className="p-1 m-3 btn btn-outline-light btn-floating m-1" href="#!" role="button"
                     ><i className="fa fa-linkedin-square" aria-hidden="true" style={{fontSize: '2rem'}}></i></a>
             </section>
         <div className="container p-4">

@@ -53,6 +53,8 @@ const DropdownLink = styled(Link)`
     color: #fff;
     cursor: pointer;
     transition: 0.2s ease-in-out;
+    font-family: 'Amiri', serif;
+    font-weight: bold;
 
     &:hover {
         color: #A6FFF3;

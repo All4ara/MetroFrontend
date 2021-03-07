@@ -1,46 +1,46 @@
 import '../Carousel/Carousel.css';
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel'
-import slide1 from '../../images/slide1.jpg'
-import slide2 from '../../images/slide2.jpg'
-import slide3 from '../../images/slide3.jpg'
+import slider1 from '../../images/slider1.jpeg'
+import slider2 from '../../images/slider2.jpeg'
+import slider3 from '../../images/slider3.jpeg'
 
 const HomeCarousel = () => {
 
 
     return (
-        <Carousel>
-            <Carousel.Item interval={10000}>
+        <Carousel className="carousel">
+            <Carousel.Item >
                 <img
                 className="d-block w-100 car-img"
-                src={slide1}
+                src={slider1}
                 alt="First slide"
                 />
                 <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h3>What's Your Home Really Worth?</h3>
+                
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item interval={500}>
+            <Carousel.Item >
                 <img
                 className="d-block w-100 car-img"
-                src={slide2}
+                src={slider2}
                 alt="Second slide"
                 />
                 <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>Let us Guide You</h3>
+                
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                 className="d-block w-100 car-img"
-                src={slide3}
+                src={slider3}
                 alt="Third slide"
                 />
                 <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <h3>Contact Us for an Appraisal</h3>
+                
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
