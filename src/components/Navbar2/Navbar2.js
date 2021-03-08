@@ -45,7 +45,7 @@ const MenuBars = styled.i`
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(-60%, 25%)
+        transform: translate(-50%, 25%)
     }
 `
 const NavMenu = styled.div`
@@ -96,7 +96,7 @@ const Navbar2 = ({ toggle }) => {
 
   let style = {
     backgroundColor:
-      navbar || location.pathname !== '/home' ? '#000' : 'transparent',
+      navbar || location.pathname !== '/home' ? '#000' : 'rgba(0,0,0,0.4)',
     transition: '0.4s'
   };
 

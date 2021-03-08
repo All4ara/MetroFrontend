@@ -12,6 +12,7 @@ import 'aos/dist/aos.css';
 
 import Home from './pages/HomePage'
 import Contact from './pages/Contact';
+import GlobalStyle from './components/globalStyle';
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
   return (
     <>
 
-      
+      <GlobalStyle />
         <Navbar2 toggle={toggle}/>
         <Dropdown isOpen={isOpen} toggle={toggle}/>
         <Switch>
