@@ -96,14 +96,14 @@ const Navbar2 = ({ toggle }) => {
 
   let style = {
     backgroundColor:
-      navbar || location.pathname !== '/home' ? '#000' : 'rgba(0,0,0,0.4)',
+      navbar || location.pathname !== '/' ? '#000' : 'rgba(0,0,0,0.4)',
     transition: '0.4s'
   };
 
 
     return (
         <Nav style={style}>
-            <Logo to='/home'><img src={MetroLogo} alt="Mobile logo"></img></Logo>
+            <Logo to='/'><img src={MetroLogo} alt="Mobile logo"></img></Logo>
             <MenuBars onClick={toggle}/>
             <NavMenu>
                 {menuData.map((item, index) => (

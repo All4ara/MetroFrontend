@@ -13,6 +13,7 @@ import 'aos/dist/aos.css';
 import Home from './pages/HomePage'
 import Contact from './pages/Contact';
 import GlobalStyle from './components/globalStyle';
+import AgentHomePage from './components/Agents/Home/AgentHomePage';
 
 
 function App() {
@@ -42,8 +43,9 @@ function App() {
           <Route path='/about' exact component={Team} />
           <Route path='/rentals' exact component={Search} />
           <Route path='/homes' exact component={Resources} /> */}
-          <Route path='/home' exact component={Home} />
+          <Route path='/' exact component={Home} />
           <Route path='/contact' exact component={Contact} />
+          <Route path='/agents' exact component={AgentHomePage} />
         </Switch>
       
        
