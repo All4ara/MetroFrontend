@@ -87,20 +87,20 @@ const Form = () => {
     const [state, setState] = useState(initialState);
     const [error, setError] = useState('');
 
-    const handleSubmit = e => {
-        e.preventDefault();
+    // const handleSubmit = e => {
+    //     e.preventDefault();
 
 
-        for (let key in state) {
-            if (state[key] === '') {
-                setError(`You must provide the ${key}`)
+    //     for (let key in state) {
+    //         if (state[key] === '') {
+    //             setError(`You must provide the ${key}`)
 
-                return 
-            }
-        }
-        setError('');
-        setState(initialState);
-    }
+    //             return 
+    //         }
+    //     }
+    //     setError('');
+    //     setState(initialState);
+    // }
 
     const handleInput = e => {
         const inputName = e.currentTarget.name;

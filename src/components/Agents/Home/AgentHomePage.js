@@ -1,6 +1,8 @@
-import React from 'react'
-import { Container, AppBar, Typography, Grow, Grind, Grid } from '@material-ui/core';
+import React, { useEffect, } from 'react'
+import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
+import { useDispatch } from 'react-redux';
 
+import { getPosts } from '../../../actions/posts';
 import Logo from '../../../images/wide-silver-logo.png';
 import Form from '../Form/Form.js'
 import Posts from '../Posts/Posts.js'
@@ -8,9 +10,15 @@ import useStyles from '../../../styles';
 
 const AgentHomePage = () => {
     const classes = useStyles();
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(getPosts());
+        
+    }, [dispatch]);
 
     return (
-        <Container maxWidth="lg">
+        <Container className={classes.container} maxWidth="lg">
             <AppBar className={classes.appBar} position="static" color="inherit">
                 <Typography className={classes.heading} variant="h3" align="center">Agents of </Typography>
                 <img className={classes.image} src={Logo} alt="MetroAgents" height="60" />

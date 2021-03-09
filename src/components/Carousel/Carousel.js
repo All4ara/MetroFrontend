@@ -4,9 +4,9 @@ import Carousel from 'react-bootstrap/Carousel'
 import slide1 from '../../images/slide1.jpg'
 import slide2 from '../../images/slide2.jpg'
 import slide3 from '../../images/slide3.jpg'
-import slider1 from '../../images/slider1.jpeg'
-import slider2 from '../../images/slider2.jpeg'
-import slider3 from '../../images/slider3.jpeg'
+// import slider1 from '../../images/slider1.jpeg'
+// import slider2 from '../../images/slider2.jpeg'
+// import slider3 from '../../images/slider3.jpeg'
 
 const HomeCarousel = () => {
 

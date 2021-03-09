@@ -13,13 +13,13 @@ const Footer = () => {
                 <div className="col-lg-6 col-md-12 mb-4 p-4">
                     <h5 className="text-uppercase">Contact Us</h5>
 
-                    <i class="fa fa-building" style={{fontSize: "1rem", padding: ".5rem"}}></i>
+                    <i className="fa fa-building" style={{fontSize: "1rem", padding: ".5rem"}}></i>
                     2913 Ave W, Brooklyn, NY 11229
                     <br/>
-                    <i class="fa fa-phone" aria-hidden="true" style={{fontSize: "1rem", padding: ".5rem"}}></i>
+                    <i className="fa fa-phone" aria-hidden="true" style={{fontSize: "1rem", padding: ".5rem"}}></i>
                     Call us FREE +1 (718) 200-8222
                     <br/>
-                    <i class="fa fa-envelope-o" aria-hidden="true" style={{fontSize: "1rem", padding: ".5rem"}}></i>
+                    <i className="fa fa-envelope-o" aria-hidden="true" style={{fontSize: "1rem", padding: ".5rem"}}></i>
                     <a className="email text-white" href="mailto:+Danieleivazov@gmail.com">Danieleivazov@gmail.com</a>
                 </div>
                 <div className="col-lg-6 col-md-12 p-4">
@@ -33,24 +33,22 @@ const Footer = () => {
         </div>
         <section className="p-1 text-center">
         
-                <a className="p-2 m-3 btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                    ><i className="fa fa-facebook-official" aria-hidden="true" style={{fontSize: '1rem'}}></i></a>
+                <a className="p-1 m-3 btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/metropolitanbrokersny/" role="button"><i className="fa fa-facebook-official" aria-hidden="true" style={{fontSize: '1rem'}}></i></a>
 
                 
-                <a className="p-2 m-3 btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                {/* <a className="p-2 m-3 btn btn-outline-light btn-floating m-1" href="#!" role="button"
                     ><i className="fa fa-twitter-square" aria-hidden="true" style={{fontSize: '1rem'}}></i></a>
 
                 
                 <a className="p-2 m-3 btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                    ><i className="fa fa-google-plus-square" aria-hidden="true" style={{fontSize: '1rem'}}></i></a>
+                    ><i className="fa fa-google-plus-square" aria-hidden="true" style={{fontSize: '1rem'}}></i></a> */}
 
                 
-                <a className="p-2 m-3 btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                    ><i className="fa fa-instagram" aria-hidden="true" style={{fontSize: '1rem'}}></i></a>
+                <a className="p-1 m-3 btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/metropolitanbrokers/?hl=en" role="button"><i className="fa fa-instagram" aria-hidden="true" style={{fontSize: '1rem'}}></i></a>
 
                 
-                <a className="p-2 m-3 btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                    ><i className="fa fa-linkedin-square" aria-hidden="true" style={{fontSize: '1rem'}}></i></a>
+                {/* <a className="p-2 m-3 btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i className="fa fa-linkedin-square" aria-hidden="true" style={{fontSize: '1rem'}}></i></a> */}
             </section>
             <div className="text-center p-3" style={{backgroundColor: 'rgba(0, 0, 0, 1)'}}>
             © 2021 Copyright:
