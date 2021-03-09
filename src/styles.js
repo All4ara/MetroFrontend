@@ -12,14 +12,14 @@ export default makeStyles(() => ({
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: '#000'
     },
     heading: {
         padding: '0px 0px',
         color: 'rgba(0,183,255, 1)',
     },
     image: {
-        width: '200px',
-
+        width: '250px',
         marginLeft: '15px',
     },
 }));

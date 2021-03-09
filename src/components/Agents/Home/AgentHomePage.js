@@ -20,7 +20,7 @@ const AgentHomePage = () => {
     return (
         <Container className={classes.container} maxWidth="lg">
             <AppBar className={classes.appBar} position="static" color="inherit">
-                <Typography className={classes.heading} variant="h3" align="center">Agents of </Typography>
+                {/* <Typography className={classes.heading} variant="h5" align="center">Agents of </Typography> */}
                 <img className={classes.image} src={Logo} alt="MetroAgents" height="60" />
             </AppBar>
             <Grow in>
