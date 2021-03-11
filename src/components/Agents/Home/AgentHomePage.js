@@ -16,7 +16,7 @@ const AgentHomePage = () => {
     useEffect(() => {
         dispatch(getPosts());
         
-    }, [dispatch]);
+    }, [currentId, dispatch]);
 
     return (
         <div className={classes.div}>
