@@ -6,15 +6,17 @@ import Input from './Input';
 import Nav from '../Navbar/Nav';
 import FileBase from 'react-file-base64';
 import { useHistory } from "react-router-dom";
+import { useDispatch } from 'react-redux';
 import { signin, signup } from '../../../actions/auth';
 
-const initialState = { firstName: '', lastName: '', email: '', password: '', confirmPassword: '', selectedFile: '' }
+const initialState = { firstName: '', lastName: '', email: '', password: '', confirmPassword: '', selectedFile: '', phone: '' }
 
 const Auth = () => {
     const classes = useStyles();
     const [showPass, setShowPass] = useState(false);
     const [isSignUp, setIsSignUp] = useState(false);
-    const [formData, setFromData] = useState(initialState);
+    const [formData, setFormData] = useState(initialState);
+    const dispatch = useDispatch();
     const history = useHistory();
     
 
@@ -31,12 +33,12 @@ const Auth = () => {
     };
 
     const handleChange = (e) => {
-        setFromData({ ...formData, [e.target.name]: e.target.value});
+        setFormData({ ...formData, [e.target.name]: e.target.value});
     };
 
     const switchMode = () => {
        setIsSignUp((prevIsSignUp) => !prevIsSignUp);
-       handleShowPassword(false);
+       setShowPass(false);
     }
 
     return (
@@ -54,16 +56,17 @@ const Auth = () => {
                                 <>
                                     <Input name="firstName" label="First Name" handleChange={handleChange} autoFocus half />
                                     <Input name="lastName" label="Last Name" handleChange={handleChange} half />
-
+                                    <Input name="phone" label="Phone Number" handleChange={handleChange} half />
+                                    <div className={classes.fileInput}>
+                                        <FileBase type="file" multiple={false} onDone={({ base64 }) => setFormData({ ...formData, selectedFile: base64 })} />
+                                    </div>
                                 </>
                             )
                         }
                         <Input name="email" label="Email" handleChange={handleChange} type="email"/>
                         <Input name="password" label="Password" handleChange={handleChange} type={showPass ? 'text' : 'password'} handleShowPassword={handleShowPassword}/>
                         { isSignUp && <Input name="confirmPassword" label="Repeat Password" handleChange={handleChange} type="password"/>}
-                        <div className={classes.fileInput}>
-                            {/* <FileBase type="file" multiple={false} onDone={({ base64 }) => setPostData({ ...postData, selectedFile: base64 })} /> */}
-                        </div>
+                        
                     </Grid>
                     <Button type="submit" fullWidth variant="contained" color="primary" className={classes.submit}>
                         {isSignUp ? 'Sign Up' : 'Enter'}
