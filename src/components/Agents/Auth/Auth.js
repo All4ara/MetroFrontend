@@ -6,22 +6,32 @@ import Input from './Input';
 import Nav from '../Navbar/Nav';
 import FileBase from 'react-file-base64';
 import { useHistory } from "react-router-dom";
+import { signin, signup } from '../../../actions/auth';
+
+const initialState = { firstName: '', lastName: '', email: '', password: '', confirmPassword: '', selectedFile: '' }
 
 const Auth = () => {
     const classes = useStyles();
     const [showPass, setShowPass] = useState(false);
     const [isSignUp, setIsSignUp] = useState(false);
+    const [formData, setFromData] = useState(initialState);
     const history = useHistory();
     
 
     const handleShowPassword = () => setShowPass((prevShowPassword) => !prevShowPassword);
 
-    const handleSubmit = () => {
-        
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        if(isSignUp) {
+            dispatch(signup(formData, history))
+        } else {
+            dispatch(signin(formData, history))
+        }
     };
 
-    const handleChange = () => {
-        
+    const handleChange = (e) => {
+        setFromData({ ...formData, [e.target.name]: e.target.value});
     };
 
     const switchMode = () => {
