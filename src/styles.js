@@ -8,7 +8,7 @@ export default makeStyles((theme) => ({
         backgroundSize: 'cover',
     },
     container: {
-        padding: '100px 0px',
+        padding: '100px 10px',
         
     },
     appBar: {

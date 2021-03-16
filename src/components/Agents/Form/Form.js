@@ -7,10 +7,11 @@ import useStyles from './styles';
 import { createPost, updatePost } from '../../../actions/posts';
 
 const Form = ({ currentId, setCurrentId }) => {
-    const [postData, setPostData] = useState({ agent: '', address: '', propertyType: '', selectedFile: '', price: '' });
-    const post = useSelector((state) => currentId ? state.posts.find((p) => p._id === currentId) : null);
+    const [postData, setPostData] = useState({ address: '', propertyType: '', selectedFile: '', price: '' });
+    const post = useSelector((state) => (currentId ? state.posts.find((p) => p._id === currentId) : null));
     const classes = useStyles();
     const dispatch = useDispatch();
+    const user = JSON.parse(localStorage.getItem('profile'));
 
     useEffect(() => {
         if(post) setPostData(post);
@@ -20,23 +21,38 @@ const Form = ({ currentId, setCurrentId }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if(currentId) {
-            dispatch(updatePost(currentId, postData));
+        if(currentId === 0) {
+            dispatch(createPost({ ...postData, name: user?.result?.name }));
+            clear();
         } else {
-            dispatch(createPost(postData));
+            dispatch(updatePost(currentId, { ...postData, name: user?.result?.name }));
+            clear();
         }
-        clear();
+        
     }
     const clear = () => {
-        setCurrentId(null);
-        setPostData({ agent: '', address: '', propertyType: '', selectedFile: '', price: ''  })
+        setCurrentId(0);
+        setPostData({ address: '', propertyType: '', selectedFile: '', price: ''  })
+    }
+
+    if(!user?.result?.name) {
+        return (
+            <Paper className={classes.paper}>
+                <Typography variant="h6" align="left">
+                    Sign Up if you're a new agent of MetropolitanBrokersNY.
+                    <Typography variant="h5" align="right">
+                        or
+                    </Typography>
+                    Sign In if you're a agent of MetropolitanBrokersNY. 
+                </Typography>
+            </Paper>
+        )
     }
 
     return (
         <Paper className={classes.paper}>
             <form className={`${classes.root} ${classes.form}`} autoComplete="off" noValidate onSubmit={handleSubmit}>
                 <Typography variant="h6">{currentId ? 'Edit Property Sold' : 'Post A Sold Property'}</Typography>
-                <TextField name="agent" variant="outlined" label="Agent" fullWidth value={postData.agent} onChange={(e) => setPostData({ ...postData, agent: e.target.value })}/>
                 <TextField name="address" variant="outlined" label="Address" fullWidth value={postData.address} onChange={(e) => setPostData({ ...postData, address: e.target.value })}/>
                 <TextField name="propertyType" variant="outlined" label="Property Type" fullWidth value={postData.propertyType} onChange={(e) => setPostData({ ...postData, propertyType: e.target.value })}/>
                 <TextField name="price" variant="outlined" label="Price" fullWidth value={postData.price} onChange={(e) => setPostData({ ...postData, price: e.target.value })}/>

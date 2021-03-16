@@ -5,7 +5,7 @@ export default makeStyles((theme) => ({
   appBar: {
     borderRadius: 15,
     marginBottom: '30px',
-    padding: '20px 0px',
+    padding: '20px 50px',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center',
@@ -23,27 +23,30 @@ export default makeStyles((theme) => ({
   },
   toolbar: {
     display: 'flex',
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
     width: '400px',
   },
   profile: {
     display: 'flex',
     justifyContent: 'space-between',
-    width: '400px',
+    width: '350px',
   },
   userName: {
     display: 'flex',
     alignItems: 'center',
+    color: 'white'
   },
   brandContainer: {
     display: 'flex',
     alignItems: 'center',
   },
   logout: {
-    width: '100%',
+    width: '40%',
   },
   purple: {
     color: theme.palette.getContrastText(deepPurple[500]),
     backgroundColor: deepPurple[500],
+    height: "50px",
+    width: "50px"
   },
 }));
