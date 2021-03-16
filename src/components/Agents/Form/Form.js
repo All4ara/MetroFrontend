@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import useStyles from './styles';
 import { createPost, updatePost } from '../../../actions/posts';
 
-const Form = ({ currentId, setCurrentId }) => {
+const Form = ({ currentId = 0, setCurrentId }) => {
     const [postData, setPostData] = useState({ address: '', propertyType: '', selectedFile: '', price: '' });
     const post = useSelector((state) => (currentId ? state.posts.find((p) => p._id === currentId) : null));
     const classes = useStyles();
@@ -20,8 +20,8 @@ const Form = ({ currentId, setCurrentId }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        if(currentId === 0) {
+        console.log(currentId)
+        if(!currentId) {
             dispatch(createPost({ ...postData, name: user?.result?.name }));
             clear();
         } else {
