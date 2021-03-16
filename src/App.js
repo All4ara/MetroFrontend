@@ -15,6 +15,7 @@ import Contact from './pages/Contact';
 import GlobalStyle from './components/globalStyle';
 import AgentHomePage from './components/Agents/Home/AgentHomePage';
 import Auth from './components/Agents/Auth/Auth';
+import Search from './pages/Search';
 
 
 function App() {
@@ -42,8 +43,9 @@ function App() {
         <Switch>
           {/* <Route path='/' exact component={About} />
           <Route path='/about' exact component={Team} />
-          <Route path='/rentals' exact component={Search} />
+          
           <Route path='/homes' exact component={Resources} /> */}
+          <Route path='/search' exact component={Search} />
           <Route path='/' exact component={Home} />
           <Route path='/contact' exact component={Contact} />
           <Route path='/agents' exact component={AgentHomePage} />
