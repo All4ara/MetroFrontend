@@ -9,7 +9,7 @@ import { useHistory } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import { signin, signup } from '../../../actions/auth';
 
-const initialState = { firstName: '', lastName: '', email: '', password: '', confirmPassword: '', selectedFile: '', phone: '' }
+const initialState = { firstName: '', lastName: '', email: '', password: '', confirmPassword: '', selectedFile: '', phone: '', officePhone: '' }
 
 const Auth = () => {
     const classes = useStyles();
@@ -57,6 +57,7 @@ const Auth = () => {
                                     <Input name="firstName" label="First Name" handleChange={handleChange} autoFocus half />
                                     <Input name="lastName" label="Last Name" handleChange={handleChange} half />
                                     <Input name="phone" label="Phone Number" handleChange={handleChange} half />
+                                    <Input name="officePhone" label="Office Number" handleChange={handleChange} half />
                                     <div className={classes.fileInput}>
                                         <FileBase type="file" multiple={false} onDone={({ base64 }) => setFormData({ ...formData, selectedFile: base64 })} />
                                     </div>

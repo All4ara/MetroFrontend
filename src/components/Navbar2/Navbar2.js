@@ -4,9 +4,9 @@ import { Link, useLocation } from 'react-router-dom';
 import { menuData } from '../../data/MenuData.js'
 import { Button } from '../Button.js';
 import Bars from '../../images/hamburg.svg';
-import MetroLogo from '../../images/wide-silver-logo.png'
+import MetroLogo from '../../images/Logo.png'
 const Nav = styled.nav`
-    height: 60px;
+    height: 110px;
     display: flex;
     justify-content: space-between;
     padding: 1rem 0rem;
@@ -31,6 +31,7 @@ const NavLink = css`
 const Logo = styled(Link)`
     ${NavLink}
     font-style: italic;
+   
 `
 const MenuBars = styled.i`
     display: none;
@@ -45,7 +46,7 @@ const MenuBars = styled.i`
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(-50%, 25%)
+        transform: translate(-50%, 75%)
     }
 `
 const NavMenu = styled.div`
@@ -103,7 +104,7 @@ const Navbar2 = ({ toggle }) => {
 
     return (
         <Nav style={style}>
-            <Logo to='/'><img src={MetroLogo} alt="Mobile logo"></img></Logo>
+            <Logo to='/'><img style={{width: '130px' ,height: '80px' }} src={MetroLogo} alt="Mobile logo"></img></Logo>
             <MenuBars onClick={toggle}/>
             <NavMenu>
                 {menuData.map((item, index) => (

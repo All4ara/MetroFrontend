@@ -35,6 +35,7 @@ const Post = ({ post, setCurrentId }) => {
                 <Typography variant="h6">{post.name}</Typography>
                 <Typography variant="body2">{moment(post.soldOn).fromNow()}</Typography>
                 <Typography variant="body2">$ {post.price}</Typography>
+                <Typography variant="body2">{post.stats}</Typography>
             </div>
             {( user?.result?._id === post?.agent) && (
             <div className={classes.overlay2}>

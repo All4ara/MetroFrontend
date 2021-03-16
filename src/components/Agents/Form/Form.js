@@ -7,7 +7,7 @@ import useStyles from './styles';
 import { createPost, updatePost } from '../../../actions/posts';
 
 const Form = ({ currentId = 0, setCurrentId }) => {
-    const [postData, setPostData] = useState({ address: '', propertyType: '', selectedFile: '', price: '' });
+    const [postData, setPostData] = useState({ address: '', propertyType: '', selectedFile: '', price: '', stats: '' });
     const post = useSelector((state) => (currentId ? state.posts.find((p) => p._id === currentId) : null));
     const classes = useStyles();
     const dispatch = useDispatch();
@@ -32,7 +32,7 @@ const Form = ({ currentId = 0, setCurrentId }) => {
     }
     const clear = () => {
         setCurrentId(0);
-        setPostData({ address: '', propertyType: '', selectedFile: '', price: ''  })
+        setPostData({ address: '', propertyType: '', selectedFile: '', price: '', stats: ''  })
     }
 
     if(!user?.result?.name) {
@@ -53,9 +53,10 @@ const Form = ({ currentId = 0, setCurrentId }) => {
         <Paper className={classes.paper}>
             <form className={`${classes.root} ${classes.form}`} autoComplete="off" noValidate onSubmit={handleSubmit}>
                 <Typography variant="h6">{currentId ? 'Edit Property Sold' : 'Post A Sold Property'}</Typography>
-                <TextField name="address" variant="outlined" label="Address" fullWidth value={postData.address} onChange={(e) => setPostData({ ...postData, address: e.target.value })}/>
-                <TextField name="propertyType" variant="outlined" label="Property Type" fullWidth value={postData.propertyType} onChange={(e) => setPostData({ ...postData, propertyType: e.target.value })}/>
-                <TextField name="price" variant="outlined" label="Price" fullWidth value={postData.price} onChange={(e) => setPostData({ ...postData, price: e.target.value })}/>
+                <TextField name="address" variant="outlined" label="Address - ex: 1234 (Street name), (City), (State) (12345)" fullWidth value={postData.address} onChange={(e) => setPostData({ ...postData, address: e.target.value })}/>
+                <TextField name="propertyType" variant="outlined" label="Property Type - ex: 1 bed, 2 bath, 3,456 sqft" fullWidth value={postData.propertyType} onChange={(e) => setPostData({ ...postData, propertyType: e.target.value })}/>
+                <TextField name="price" variant="outlined" label="Price - ex: 123,456" fullWidth value={postData.price} onChange={(e) => setPostData({ ...postData, price: e.target.value })}/>
+                <TextField name="stats" variant="outlined" label="Status - ex: Sold or Active" fullWidth value={postData.stats} onChange={(e) => setPostData({ ...postData, stats: e.target.value })}/>
                 <div className={classes.fileInput}>
                     <FileBase type="file" multiple={false} onDone={({ base64 }) => setPostData({ ...postData, selectedFile: base64 })} />
                 </div>
