@@ -3,6 +3,7 @@ import { AppBar, Avatar, Button, Toolbar, Typography } from '@material-ui/core';
 import useStyles from './styles';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+import decode from 'jwt-decode';
 
 import Logo from '../../../images/wide-silver-logo.png';
 
@@ -16,7 +17,7 @@ const Nav = () => {
     const logout = () => {
         dispatch({ type: 'LOGOUT'});
 
-        history.push('/agents')
+        history.push('/auth')
 
         setUser(null);
     };
@@ -24,6 +25,11 @@ const Nav = () => {
     useEffect(() => {
         const token = user?.token;
 
+        if(token) {
+            const decodedToken = decode(token);
+
+            if(decodedToken.exp * 1000 < new Date().getTime()) logout();
+        }
 
         
         setUser(JSON.parse(localStorage.getItem('profile')))
