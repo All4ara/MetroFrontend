@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import CardDeck from 'react-bootstrap/CardDeck';
+import Card from 'react-bootstrap/Card';
+import './team.css'
 
 
 const MetroTeam = () => {
@@ -15,15 +18,39 @@ const MetroTeam = () => {
             })
     }, [])
     return (
-        <div className="container p-5">
-            <div className="row p-5">
-                <ul>
-                    {agents && agents.map((agent) => 
-                    <li><img style={{width: '100px', height: '100px'}} src={agent.selectedFile} alt={agent.name}/> <br/> {agent.name} <br/> {agent.email} <br/> {agent.phone}</li>
-                    )}
-                </ul>
+        <>
+        <div className="bg-overlay">
+            <div className="text-overlay p-5 text-center">
+                <h1>Work With Us</h1>
+                <h4>OUR NETWORK OF LUXURY REAL ESTATE AGENTS</h4>
+                <br/><br/>
+                <button type="button" className="btn btn-primary btn-lg">Get Started</button>
             </div>
         </div>
+        <div className="container-fluid Team ">
+            <div className="row ">
+
+            {agents && agents.map((agent) => 
+            <CardDeck className="CardDeck mx-auto">
+                <Card>
+                    <Card.Img variant="top" src={agent.selectedFile} style={{padding: '3rem', width: '347px', height: '340px', borderRadius: '50%'}} />
+                    <Card.Body className="text-center">
+                    <Card.Title>{agent.name}</Card.Title>
+                    <Card.Text>
+                        {agent.email}
+                        <br/>
+                        {agent.phone}
+                    </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                    <small className="text-muted"></small>
+                    </Card.Footer>
+                </Card>
+            </CardDeck>
+            )}
+            </div>
+        </div>
+        </>
     )
 }
 
