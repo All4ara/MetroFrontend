@@ -17,6 +17,7 @@ import AgentHomePage from './components/Agents/Home/AgentHomePage';
 import Auth from './components/Agents/Auth/Auth';
 import Search from './pages/Search';
 import Team from './pages/Team';
+import TeamMember from './pages/TeamMember';
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
           
           <Route path='/homes' exact component={Resources} /> */}
           <Route path='/team' exact component={Team} />
+          <Route path='/team/:id' exact component={TeamMember} />
           <Route path='/search' exact component={Search} />
           <Route path='/' exact component={Home} />
           <Route path='/contact' exact component={Contact} />

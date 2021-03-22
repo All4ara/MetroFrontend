@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Card from 'react-bootstrap/Card';
+
+import { Link } from 'react-router-dom';
 import './team.css'
 
 
@@ -43,7 +45,9 @@ const MetroTeam = () => {
                     </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                    <small className="text-muted"></small>
+                    <small className="text-muted">
+                        <Link to={`/team/${agent._id}`}>View Agent</Link>
+                    </small>
                     </Card.Footer>
                 </Card>
             </CardDeck>
