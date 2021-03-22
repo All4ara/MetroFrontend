@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import './team.css'
 
 
-const MetroTeam = () => {
+const MetroTeam = (props) => {
     const [agents, setAgents] = useState()
 
     useEffect(() => {

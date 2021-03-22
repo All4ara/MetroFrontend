@@ -18,9 +18,10 @@ import Auth from './components/Agents/Auth/Auth';
 import Search from './pages/Search';
 import Team from './pages/Team';
 import TeamMember from './pages/TeamMember';
+import MetroTeamMate from './components/MetroTeamMate/MetroTeamMate';
 
 
-function App() {
+function App(props) {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
@@ -48,7 +49,7 @@ function App() {
           
           <Route path='/homes' exact component={Resources} /> */}
           <Route path='/team' exact component={Team} />
-          <Route path='/team/:id' exact component={TeamMember} />
+          <Route path='/team/:id' exact component={MetroTeamMate} />
           <Route path='/search' exact component={Search} />
           <Route path='/' exact component={Home} />
           <Route path='/contact' exact component={Contact} />
