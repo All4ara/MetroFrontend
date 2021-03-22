@@ -6,7 +6,7 @@ const MetroTeamMate = (props) => {
     const [agent, setAgent] = useState(false)
 
     useEffect(() => {
-        axios.get(`/users/${props.match.params.id}`)
+        axios.get(`https://metrobrokers-backend.herokuapp.com/users/${props.match.params.id}`)
             .then((response) => {
                 setAgent(response.data)
             })
