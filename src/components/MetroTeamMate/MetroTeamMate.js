@@ -4,6 +4,7 @@ import './metromate.css';
 
 const MetroTeamMate = (props) => {
     const [agent, setAgent] = useState(false)
+    const mailto = 'mailto:+'
 
     useEffect(() => {
         axios.get(`https://metrobrokers-backend.herokuapp.com/users/${props.match.params.id}`)
@@ -18,7 +19,7 @@ const MetroTeamMate = (props) => {
     return (
         <>
             <div className="page-header header-filter" data-parallax="true"></div>
-                <div className="main main-raised">
+                <div className="main main-raised ">
 
                 {agent && 
                     <div className="profile-content">
