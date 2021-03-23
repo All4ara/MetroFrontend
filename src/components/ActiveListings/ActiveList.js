@@ -1,39 +1,32 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
-import Carousel from 'react-elastic-carousel';
 import styled from 'styled-components';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import './style.css'
 
 
-const Listing = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    width: 100%;
-    margin: 0 10px;
-    font-size: 1em;
-`
-const Image = styled.img`
+// const Listing = styled.div`
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     height: 500px;
+//     width: 100%;
+//     margin: 0 10px;
+//     font-size: 1em;
+// `
+// const Image = styled.img`
 
-    width: 60%;
-    height: 23rem;
+//     width: 60%;
+//     height: 23rem;
 
-    @media screen and (max-width: 768px) {
-        width: 100%;
-    }
-`
+//     @media screen and (max-width: 768px) {
+//         width: 100%;
+//     }
+// `
 
-const breakPoints = [
-    { width: 1, itemsToShow : 1},
-    { width: 300, itemsToShow : 2},
-    { width: 600, itemsToShow : 3},
-    // { width: 900, itemsToShow : 4},
-    // { width: 1200, itemsToShow : 5},
-    // { width: 1500, itemsToShow : 6},
-    // { width: 1800, itemsToShow : 7},
-    // { width: 2100, itemsToShow : 8},
-]
 
 const ActiveList = (props) => {
     const [lists, setLists] = useState()
@@ -48,27 +41,41 @@ const ActiveList = (props) => {
                 console.log('3')
             })
     }, [])
+
+    let settings = {
+        dot: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        cssEase: "linear"
+    }
     return (
+        <Slider >
+
+        </Slider>
        
-    <div className="container" style={{height: "700px", marginTop: '4rem'}}>
-        <h1 className="text-center">Active Listings</h1>
-        <div className="row " >
+    // <div className="container" style={{height: "700px", marginTop: '4rem'}}>
+    //     <h1 className="text-center">Active Listings</h1>
+    //     <div className="row " >
             
-            <Carousel >
-            {lists && lists.map((list) =>
-                <Listing>
+    //         <Carousel >
+    //         {lists && lists.map((list) =>
+    //             <Listing>
                 
-                    <h5 className="text-left">{list.address}</h5>
-                    <Image src={list.selectedFile} alt="Web 3" className="pro-pic"/>
-                    <h5 className="text-left">{list.propertyType}</h5>
-                    <h5 className="text-left">$ {list.price}</h5>
+    //                 <h4 className="text-left">{list.address}</h4>
+    //                 <Image src={list.selectedFile} alt="Web 3" className="pro-pic"/>
+    //                 <h4 className="text-left">{list.propertyType}</h4>
+    //                 <h4 className="text-left">{list.price}</h4>
                     
-                </Listing>
-            )}
-            </Carousel>
+    //             </Listing>
+    //         )}
+    //         </Carousel>
     
-        </div> 
-    </div>
+    //     </div> 
+    // </div>
+    
+    
     )
 }
 
