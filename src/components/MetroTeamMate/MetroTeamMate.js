@@ -4,7 +4,7 @@ import './metromate.css';
 
 const MetroTeamMate = (props) => {
     const [agent, setAgent] = useState(false)
-    const mailto = 'mailto:+'
+    
 
     useEffect(() => {
         axios.get(`https://metrobrokers-backend.herokuapp.com/users/${props.match.params.id}`)

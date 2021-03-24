@@ -5,7 +5,7 @@ import { Link, useHistory, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import decode from 'jwt-decode';
 
-import Logo from '../../../images/wide-silver-logo.png';
+
 
 const Nav = () => {
     const classes = useStyles();
@@ -23,7 +23,7 @@ const Nav = () => {
     };
 
     useEffect(() => {
-        const token = user?.token;
+        const token = user.token;
 
         if(token) {
             const decodedToken = decode(token);

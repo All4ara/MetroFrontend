@@ -17,13 +17,13 @@ import './style.css'
 //     margin: 0 10px;
 //     font-size: 1em;
 // `
-const Image = styled.img`
+// const Image = styled.img`
 
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
     
-`
+// `
 
 
 const ActiveList = (props) => {
@@ -63,7 +63,7 @@ const ActiveList = (props) => {
             
                 <div className="card ">
                     <div className="card-image">
-                        <img className="img" src={list.selectedFile} />
+                        <img className="img" alt="Property Listing" src={list.selectedFile} />
                     </div>
                     <div className="details text-center">
                         <h6>$ {list.price}</h6>
