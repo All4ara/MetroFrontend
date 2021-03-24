@@ -17,15 +17,13 @@ import './style.css'
 //     margin: 0 10px;
 //     font-size: 1em;
 // `
-// const Image = styled.img`
+const Image = styled.img`
 
-//     width: 60%;
-//     height: 23rem;
-
-//     @media screen and (max-width: 768px) {
-//         width: 100%;
-//     }
-// `
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+`
 
 
 const ActiveList = (props) => {
@@ -47,12 +45,35 @@ const ActiveList = (props) => {
         infinite: true,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 1,
-        cssEase: "linear"
+        slidesToScroll: 2,
+        cssEase: "linear",
+
+        responsive: [{
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }]
     }
     return (
-        <Slider >
-
+        <Slider  {...settings}>
+            {lists && lists.map((list) =>
+            <div className="card-wrapper">
+            
+                <div className="card ">
+                    <div className="card-image">
+                        <img className="img" src={list.selectedFile} />
+                    </div>
+                    <div className="details text-center">
+                        <h6>$ {list.price}</h6>
+                        <h6>{list.propertyType}</h6>
+                        <h6>{list.address}</h6>
+                    </div>
+                </div>
+           
+            </div>
+            )}
         </Slider>
        
     // <div className="container" style={{height: "700px", marginTop: '4rem'}}>
