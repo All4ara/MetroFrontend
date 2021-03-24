@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './metromate.css';
+import ActiveList from '../ActiveListings/ActiveList';
+import '../../App.css'
 
 const MetroTeamMate = (props) => {
     const [agent, setAgent] = useState(false)
@@ -46,6 +48,13 @@ const MetroTeamMate = (props) => {
                     </div> 
                     }
                 </div>
+                <div className="slider-body ">
+                    <div className="container mt-5 carousel">
+                        <h1 className="slider-title text-center">Sold Listings</h1>
+                        <ActiveList  className="active-list"/>
+                    </div>
+                </div>
+                
                
 
         </>
