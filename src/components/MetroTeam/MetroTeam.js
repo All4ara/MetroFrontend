@@ -38,7 +38,7 @@ const MetroTeam = (props) => {
                     <Card.Img variant="top" src={agent.selectedFile} style={{padding: '3rem', width: '347px', height: '340px', borderRadius: '50%'}} />
                     <Card.Body className="text-center">
                     <Card.Title>{agent.name}</Card.Title>
-                    <Card.Text>
+                    <Card.Text className="">
                         {agent.email}
                         <br/>
                         {agent.phone}

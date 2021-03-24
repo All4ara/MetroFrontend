@@ -61,7 +61,7 @@ const ActiveList = (props) => {
             {lists && lists.map((list) =>
             <div className="card-wrapper">
             
-                <div className="card ">
+                <div className="card cardy">
                     <div className="card-image">
                         <img className="img" alt="Property Listing" src={list.selectedFile} />
                     </div>
