@@ -59,7 +59,9 @@ const ActiveList = (props) => {
     return (
         <Slider  {...settings}>
             {lists && lists.map((list) =>
-            <div className="card-wrapper">
+            {if(list.stats === 'Active') {
+                 return (
+                <div className="card-wrapper">
             
                 <div className="card cardy">
                     <div className="card-image">
@@ -73,6 +75,7 @@ const ActiveList = (props) => {
                 </div>
            
             </div>
+            )}}
             )}
         </Slider>
        
