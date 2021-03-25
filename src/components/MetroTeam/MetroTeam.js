@@ -26,7 +26,7 @@ const MetroTeam = (props) => {
                 <h1>Work With Us</h1>
                 <h4>OUR NETWORK OF LUXURY REAL ESTATE AGENTS</h4>
                 <br/><br/>
-                <button type="button" className="btn btn-primary btn-lg">Get Started</button>
+                <Link to="/contact"><button type="button" className="btn btn-dark btn-lg">Get Started</button></Link>
             </div>
         </div>
         <div className="container-fluid Team ">
@@ -37,17 +37,15 @@ const MetroTeam = (props) => {
                 <Card>
                     <Card.Img variant="top" src={agent.selectedFile} style={{padding: '3rem', width: '347px', height: '340px', borderRadius: '50%'}} />
                     <Card.Body className="text-center">
-                    <Card.Title>{agent.name}</Card.Title>
+                    <Card.Title className="title">{agent.name}</Card.Title>
                     <Card.Text className="">
                         {agent.email}
                         <br/>
                         {agent.phone}
                     </Card.Text>
                     </Card.Body>
-                    <Card.Footer>
-                    <small className="text-muted">
-                        <Link to={`/team/${agent._id}`}>View Agent</Link>
-                    </small>
+                    <Card.Footer className="foot text-center">
+                        <Link to={`/team/${agent._id}`}><button ype="button" className="w-100 btn btn-dark btn-lg">View Agent</button></Link>
                     </Card.Footer>
                 </Card>
             </CardDeck>

@@ -4,7 +4,16 @@
 .CardDeck {
   padding-bottom: 2rem;
 }
-
+.title,
+.foot button {
+  padding: 0;
+  font-family: "Playfair Display SC", serif;
+}
+.text-overlay h1,
+.text-overlay h4,
+.text-overlay button {
+  font-family: "Playfair Display SC", serif;
+}
 .bg-overlay {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("https://www.conferencecall.co.uk/blog/wp-content/uploads/2017/09/offering-a-handshake.png");
