@@ -36,7 +36,9 @@
     transform: rotate(360deg);
   }
 } */
-
+* {
+  font-family: "Playfair Display SC", serif;
+}
 .active-list {
   margin: 0;
   padding: 0;
@@ -57,4 +59,5 @@
   color: silver;
   text-transform: uppercase;
   margin-bottom: 2vw;
+  font-family: "Playfair Display SC", serif;
 }

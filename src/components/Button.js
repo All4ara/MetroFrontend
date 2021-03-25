@@ -18,6 +18,7 @@ export const Button = styled(Link)`
     color: ${({ primary }) => (primary ? '#fff' : '#000d1a')};
     font-size: ${({big}) => (big ? '20px' : '14px')};
     border-radius: ${({ round }) => (round ? '50px' : '0px')};
+    font-family: "Playfair Display SC", serif;
 
     &:hover {
         transform: translateY(-2px)

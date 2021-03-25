@@ -13,12 +13,12 @@ const Footer = () => {
                 <div className="col-lg-6 col-md-12 mb-4 p-4">
                     <h5 className="text-uppercase">Contact Us</h5>
 
-                    <i className="fa fa-building" style={{fontSize: "1rem", padding: ".5rem"}}></i>
-                    2913 Ave W, Brooklyn, NY 11229
-                    <br/>
-                    <i className="fa fa-phone" aria-hidden="true" style={{fontSize: "1rem", padding: ".5rem"}}></i>
-                    Call us FREE +1 (718) 200-8222
-                    <br/>
+                    
+                    <p><i className="fa fa-building" style={{fontSize: "1rem", padding: ".5rem"}}></i>2913 Ave W, Brooklyn, NY 11229</p>
+                    
+                    
+                    <p><i className="fa fa-phone" aria-hidden="true" style={{fontSize: "1rem", padding: ".5rem"}}></i>Call us FREE +1 (718) 200-8222</p>
+                    
                     <i className="fa fa-envelope-o" aria-hidden="true" style={{fontSize: "1rem", padding: ".5rem"}}></i>
                     <a className="email text-white" href="mailto:+Danieleivazov@gmail.com">Danieleivazov@gmail.com</a>
                 </div>

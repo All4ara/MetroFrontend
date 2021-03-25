@@ -19,7 +19,7 @@ const HomeCarousel = () => {
                 src={slide1}
                 alt="First slide"
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className="car-cap">
                 <h3>What's Your Home Really Worth?</h3>
                 
                 </Carousel.Caption>
@@ -30,7 +30,7 @@ const HomeCarousel = () => {
                 src={slide2}
                 alt="Second slide"
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className="car-cap">
                 <h3>Let us Guide You</h3>
                 
                 </Carousel.Caption>
@@ -41,7 +41,7 @@ const HomeCarousel = () => {
                 src={slide3}
                 alt="Third slide"
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className="car-cap">
                 <h3>Contact Us for an Appraisal</h3>
                 
                 </Carousel.Caption>

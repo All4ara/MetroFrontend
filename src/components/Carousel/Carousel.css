@@ -1,3 +1,7 @@
 .car-img {
   height: 100vh;
 }
+.car-cap h3 {
+  color: silver;
+  font-family: "Playfair Display SC", serif;
+}

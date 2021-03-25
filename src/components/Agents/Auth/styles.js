@@ -3,13 +3,14 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles((theme) => ({
   container: {
     padding: '100px 10px',
-        
+    
   },
   paper: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     padding: theme.spacing(2),
+    
   },
   root: {
     '& .MuiTextField-root': {
@@ -23,6 +24,7 @@ export default makeStyles((theme) => ({
   form: {
     width: '100%', // Fix IE 11 issue.
     marginTop: theme.spacing(3),
+    
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
@@ -33,6 +35,6 @@ export default makeStyles((theme) => ({
   fileInput: {
     width: '97%',
     margin: '10px 10px',
-    
+    fontFamily: "Playfair Display SC",
   },
 }));

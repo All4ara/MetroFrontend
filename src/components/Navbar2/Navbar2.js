@@ -23,7 +23,7 @@ const NavLink = css`
     height: 100%;
     cursor: pointer;
     text-decoration: none;
-    font-family: 'Amiri', serif;
+    font-family: "Playfair Display SC", serif;
     font-weight: bold;
     font-size: 1.2rem;
 `

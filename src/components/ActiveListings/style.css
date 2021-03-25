@@ -57,3 +57,8 @@
   padding: 3px;
   transition: 0.6s;
 }
+
+.details h6 {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+}

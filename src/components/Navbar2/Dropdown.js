@@ -37,6 +37,7 @@ const DropdownMenu = styled.div`
     grid-template-rows: repeat(4, 80px);
     text-align: center;
     margin-bottom: 4rem;
+    
 
     @media screen and (max-width: 480px) {
         grid-template-rows: repeat(4, 60px);
@@ -53,7 +54,7 @@ const DropdownLink = styled(Link)`
     color: #fff;
     cursor: pointer;
     transition: 0.2s ease-in-out;
-    font-family: 'Amiri', serif;
+    font-family: "Playfair Display SC", serif;
     font-weight: bold;
 
     &:hover {
@@ -63,6 +64,7 @@ const DropdownLink = styled(Link)`
 const BtnWrap = styled.div`
     display: flex;
     justify-content: center;
+    
 `
 
 const Dropdown = ({ isOpen, toggle }) => {
