@@ -13,14 +13,14 @@ const HomeCarousel = () => {
 
     return (
         <Carousel>
-            <Carousel.Item >
+            <Carousel.Item className="car-img-wrap">
                 <img
                 className="d-block w-100 car-img"
                 src={slide1}
                 alt="First slide"
                 />
                 <Carousel.Caption className="car-cap">
-                <h3>What's Your Home Really Worth?</h3>
+                <h2>What's Your Home Really Worth?</h2>
                 
                 </Carousel.Caption>
             </Carousel.Item>
@@ -31,7 +31,7 @@ const HomeCarousel = () => {
                 alt="Second slide"
                 />
                 <Carousel.Caption className="car-cap">
-                <h3>Let us Guide You</h3>
+                <h2>Let us Guide You</h2>
                 
                 </Carousel.Caption>
             </Carousel.Item>
@@ -42,7 +42,7 @@ const HomeCarousel = () => {
                 alt="Third slide"
                 />
                 <Carousel.Caption className="car-cap">
-                <h3>Contact Us for an Appraisal</h3>
+                <h2>Contact Us for an Appraisal</h2>
                 
                 </Carousel.Caption>
             </Carousel.Item>

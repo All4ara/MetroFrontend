@@ -1,7 +1,8 @@
 .car-img {
   height: 100vh;
 }
-.car-cap h3 {
-  color: silver;
+.car-cap h2 {
+  color: rgb(129, 250, 214);
   font-family: "Playfair Display SC", serif;
+  font-weight: 700;
 }

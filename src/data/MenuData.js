@@ -3,5 +3,5 @@ export const menuData = [
     { title: 'Meet the Team', link: '/team' },
     { title: 'Search for Property', link: '/search' },
     { title: 'Resources', link: '/resource' },
-    { title: 'Agents Only', link: '/agents' },
+    { title: 'Agents Only', link: '/auth' },
 ];
