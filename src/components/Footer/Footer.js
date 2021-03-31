@@ -4,7 +4,7 @@ import '../Footer/Footer.css';
 
 const Footer = () => {
     return(
-    <footer className="w-100 text-left text-white text-lg-start" style={{backgroundColor: 'rgba(0, 0, 0, 0.9)'}}>
+    <footer className="w-100 text-left text-white text-lg-center" style={{backgroundColor: 'rgba(0, 0, 0, 0.9)'}}>
         
         <div className="containers">
            

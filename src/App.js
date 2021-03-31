@@ -18,6 +18,7 @@ import Auth from './components/Agents/Auth/Auth';
 import Search from './pages/Search';
 import Team from './pages/Team';
 import About from './pages/About'
+import Faqs from './pages/Faqs'
 
 import MetroTeamMate from './components/MetroTeamMate/MetroTeamMate';
 
@@ -45,10 +46,7 @@ function App(props) {
         <Navbar2 toggle={toggle}/>
         <Dropdown isOpen={isOpen} toggle={toggle}/>
         <Switch>
-          {/* 
-          
-          
-          <Route path='/homes' exact component={Resources} /> */}
+          <Route path='/resources' exact component={Faqs} /> 
           <Route path='/about' exact component={About} />
           <Route path='/team' exact component={Team} />
           <Route path='/team/:id' exact component={MetroTeamMate} />
