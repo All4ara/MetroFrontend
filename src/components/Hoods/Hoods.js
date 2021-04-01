@@ -14,7 +14,7 @@ const Hoods = () => {
                         <i className="fa fa-dollar fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 className="my-3">Sellers</h4>
-                    <p className="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p className="">With an unmatched team of experienced agents, Metropolitan Brokers will seamlessly guied you to the finish line.</p>
                 </div>
                 <div className="col-md-4">
                     <span className="fa-stack fa-4x">
@@ -22,7 +22,7 @@ const Hoods = () => {
                         <i className="fa fa-area-chart fa-stack-1x fa-inverse mx-1"></i>
                     </span>
                     <h4 className="my-3">Market Analysis</h4>
-                    <p className="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p className="">With the best neighborhood insights in the metropolitan area, we've captured the color and diversity of community.</p>
                 </div>
                 <div className="col-md-4">
                     <span className="fa-stack fa-4x">
@@ -30,7 +30,7 @@ const Hoods = () => {
                         <i className="fa fa-bank fa-stack-1x fa-inverse mx-1"></i>
                     </span>
                     <h4 className="my-3">Buyers</h4>
-                    <p className="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p className="">With a great selection of homes for sale, our agents can match you with a house you will want to call home.</p>
                 </div>
             </div>
         </div>
