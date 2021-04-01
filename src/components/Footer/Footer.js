@@ -32,7 +32,7 @@ const Footer = () => {
                 <div className="col-lg-6 col-md-12 p-5">
                     <h5 className="text-uppercase">About Us</h5>
 
-                    <p style={{fontSize: "1rem", paddingTop: ".5rem"}}>
+                    <p style={{fontSize: "1rem", paddingTop: ".5rem", padding: '0 40px'}}>
                     Metropolitan Brokers is a developing real estate company in Brooklyn New York which specializes in residential sales and rentals, while also performing many commercial transactions as well. Our team is young, motivated and there to get the job done for the client. Our number one priority is to make our customers happy. Feel free to each out to us today to make us the next real estate company you use.
                     </p>
                 </div>
