@@ -104,7 +104,7 @@ const Navbar2 = ({ toggle }) => {
 
     return (
         <Nav style={style}>
-            <Logo to='/'><img style={{width: '130px' ,height: '80px' }} src={MetroLogo} alt="Mobile logo"></img></Logo>
+            <Logo to='/' data-aos='fade-right' data-aos-duration='1000' data-aos-once='true' data-aos-anchor-placement='center-bottom'><img style={{width: '130px' ,height: '80px' }} src={MetroLogo} alt="Mobile logo"></img></Logo>
             <MenuBars onClick={toggle}/>
             <NavMenu>
                 {menuData.map((item, index) => (

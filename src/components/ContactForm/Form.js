@@ -14,7 +14,7 @@ const FormWrap = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110vh;
+    height: 120vh;
     padding: 0px 20px;
 `
 const ContactForm = styled.form`

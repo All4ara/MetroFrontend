@@ -8,7 +8,7 @@ const Footer = () => {
         
         <div className="containers">
            
-            <div className="row p-1">
+            <div className="row p-1" data-aos='fade-right' data-aos-duration='1000' data-aos-once='true' data-aos-anchor-placement='center-bottom'>
                 
                 <div className="col-lg-6 col-md-12 mb-2 p-5">
                     <h5 className="text-uppercase">Contact Us</h5>
@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
         </div>
         
-        <div className="text-center p-3" style={{backgroundColor: 'rgba(0, 0, 0, 1)'}}>
+        <div className="text-center p-3" style={{backgroundColor: 'rgba(0, 0, 0, 1)'}} >
             © 2021 Copyright: <a className="text-white" href="https://http://metropolitanbrokersny.com//"> MetropolitanBrokersNY.com</a>
         </div>
        
