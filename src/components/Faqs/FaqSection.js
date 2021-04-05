@@ -95,8 +95,8 @@ const data5 = {
 const FaqSection = () => {
     return (
         
-        <div className="container mar-top">
-            <h2 className="text-center m-2 mb-5">Faqs</h2>
+        <div className="container mar-top" >
+            <h2 className="text-center m-2 mb-5" data-aos='fade-left' data-aos-duration='1000' data-aos-once='true' data-aos-anchor-placement='center-bottom'>Faqs</h2>
             <Faq  className="faq"
             data={data}
                 styles={{

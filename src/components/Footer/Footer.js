@@ -8,9 +8,9 @@ const Footer = () => {
         
         <div className="containers">
            
-            <div className="row p-1" data-aos='fade-right' data-aos-duration='1000' data-aos-once='true' data-aos-anchor-placement='center-bottom'>
+            <div className="row p-1" >
                 
-                <div className="col-lg-6 col-md-12 mb-2 p-5">
+                <div className="col-lg-6 col-md-12 mb-2 p-5" data-aos='fade-right' data-aos-duration='1000' data-aos-once='true' data-aos-anchor-placement='center-bottom'>
                     <h5 className="text-uppercase">Contact Us</h5>
 
                     
@@ -29,10 +29,10 @@ const Footer = () => {
                         <a className="p-2 btn btn-outline-light btn-floating m-3" href="https://www.instagram.com/metropolitanbrokers/?hl=en" role="button"><i className="fa fa-instagram" aria-hidden="true" style={{fontSize: '1.5rem'}}></i></a>
                     </div>
                 </div>
-                <div className="col-lg-6 col-md-12 p-5">
+                <div className="col-lg-6 col-md-12 p-5" data-aos='fade-right' data-aos-duration='2000' data-aos-once='true' data-aos-anchor-placement='center-bottom'>
                     <h5 className="text-uppercase">About Us</h5>
 
-                    <p style={{fontSize: "1rem", paddingTop: ".5rem", padding: '0 40px'}}>
+                    <p style={{fontSize: "1rem", paddingTop: ".5rem", padding: '0 20px'}}>
                     Metropolitan Brokers is a developing real estate company in Brooklyn New York which specializes in residential sales and rentals, while also performing many commercial transactions as well. Our team is young, motivated and there to get the job done for the client. Our number one priority is to make our customers happy. Feel free to each out to us today to make us the next real estate company you use.
                     </p>
                 </div>
