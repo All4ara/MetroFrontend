@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
         
         <div className="text-center p-3" style={{backgroundColor: 'rgba(0, 0, 0, 1)'}} >
-            © 2021 Copyright: <a className="text-white" href="https://http://metropolitanbrokersny.com//"> MetropolitanBrokersNY.com</a>
+            © 2021 Copyright: <a className="text-white" href="https://metropolitanbrokersny.com"> MetropolitanBrokersNY.com</a>
         </div>
        
     </footer>
