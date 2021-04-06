@@ -23,9 +23,9 @@ const MetroTeam = (props) => {
         <>
         <div className="bg-overlay" data-aos='fade-down' data-aos-duration='1000' data-aos-once='true' data-aos-anchor-placement='center-bottom'>
             <div className="text-overlay p-5 text-center" >
-                <h1>Work With Us</h1>
+                <h2>Work With Us</h2>
                 <h4>OUR NETWORK OF LUXURY REAL ESTATE AGENTS</h4>
-                <br/><br/>
+                
                 <Link to="/contact"><button type="button" className="btn btn-dark btn-lg">Get Started</button></Link>
             </div>
         </div>

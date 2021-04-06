@@ -3,7 +3,8 @@
   object-fit: cover;
 }
 .car-cap h2 {
-  color: rgb(129, 250, 214);
+  color: rgb(236, 236, 236);
+  text-shadow: 2px 2px 8px #000000;
   font-family: "Playfair Display SC", serif;
   font-weight: 700;
 }
