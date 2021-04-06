@@ -14,6 +14,7 @@ const Nav = styled.nav`
     position fixed;
     width: 100%;
     
+    
 `
 const NavLink = css`
     color: #fff;
@@ -26,12 +27,15 @@ const NavLink = css`
     font-family: "Playfair Display SC", serif;
     font-weight: bold;
     font-size: 1.2rem;
+
+    &:hover {
+        color: #fff;
+        transform: translateY(-5px);
+    }
 `
 
 const Logo = styled(Link)`
     ${NavLink}
-    font-style: italic;
-   
 `
 const MenuBars = styled.i`
     display: none;
@@ -60,6 +64,7 @@ const NavMenu = styled.div`
 `
 const NavMenuLinks = styled(Link)`
     ${NavLink}
+    
 `
 const NavBtn = styled.div`
     display: flex;
