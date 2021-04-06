@@ -98,7 +98,7 @@ const Form = () => {
     return (
         <>
             <FormWrap>
-                <ContactForm action="https://formspree.io/f/mpzovpaz" method="POST">
+                <ContactForm action="https://formspree.io/f/xrgrgkvv" method="POST">
                     <h2>Contact Form</h2>
                     <label htmlFor="name">Name</label>
                     <Input type="text" name="name" value={state.name} onChange={handleInput}/>
