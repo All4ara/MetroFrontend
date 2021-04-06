@@ -1,5 +1,6 @@
 .car-img {
   height: 98vh;
+  object-fit: cover;
 }
 .car-cap h2 {
   color: rgb(129, 250, 214);

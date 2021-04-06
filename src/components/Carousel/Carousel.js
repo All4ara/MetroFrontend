@@ -7,6 +7,9 @@ import slide3 from '../../images/slide3.jpg'
 // import slider1 from '../../images/slider1.jpeg'
 // import slider2 from '../../images/slider2.jpeg'
 // import slider3 from '../../images/slider3.jpeg'
+import brown from '../../images/brownstone.jpg'
+import condo from '../../images/condo.jpeg'
+import single from '../../images/single.jpeg'
 
 const HomeCarousel = () => {
 
@@ -16,7 +19,7 @@ const HomeCarousel = () => {
             <Carousel.Item className="car-img-wrap">
                 <img
                 className="d-block w-100 car-img"
-                src={slide1}
+                src={brown}
                 alt="First slide"
                 />
                 <Carousel.Caption className="car-cap">
@@ -27,7 +30,7 @@ const HomeCarousel = () => {
             <Carousel.Item >
                 <img
                 className="d-block w-100 car-img"
-                src={slide2}
+                src={single}
                 alt="Second slide"
                 />
                 <Carousel.Caption className="car-cap">
@@ -38,7 +41,7 @@ const HomeCarousel = () => {
             <Carousel.Item>
                 <img
                 className="d-block w-100 car-img"
-                src={slide3}
+                src={condo}
                 alt="Third slide"
                 />
                 <Carousel.Caption className="car-cap">
