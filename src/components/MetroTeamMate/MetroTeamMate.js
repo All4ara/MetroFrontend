@@ -66,7 +66,7 @@ const MetroTeamMate = (props) => {
                                         </div>
                                         <div className="name">
                                             <h3 className="title">{agent.name}</h3>
-                                            <h6><a href={`mailto:${agent.email}`}>{agent.email}</a></h6>
+                                            <h6>{agent.email}</h6>
                                             <h6>Personal: <a href={`tel:${agent.phone}`}>{agent.phone}</a></h6>
                                             <h6>Office: <a href={`tel:${agent.officePhone}`}>{agent.officePhone}</a></h6>
                                         </div>
