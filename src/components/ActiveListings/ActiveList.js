@@ -78,27 +78,6 @@ const ActiveList = (props) => {
             )}}
             )}
         </Slider>
-       
-    // <div className="container" style={{height: "700px", marginTop: '4rem'}}>
-    //     <h1 className="text-center">Active Listings</h1>
-    //     <div className="row " >
-            
-    //         <Carousel >
-    //         {lists && lists.map((list) =>
-    //             <Listing>
-                
-    //                 <h4 className="text-left">{list.address}</h4>
-    //                 <Image src={list.selectedFile} alt="Web 3" className="pro-pic"/>
-    //                 <h4 className="text-left">{list.propertyType}</h4>
-    //                 <h4 className="text-left">{list.price}</h4>
-                    
-    //             </Listing>
-    //         )}
-    //         </Carousel>
-    
-    //     </div> 
-    // </div>
-    
     
     )
 }
